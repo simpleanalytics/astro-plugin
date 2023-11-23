@@ -1,7 +1,7 @@
 {
   "name": "astro-simpleanalytics-plugin",
   "description": "Use the Astro Simple Analytics Plugin to quickly integrate Simple Analytics in your Astro project with parameter control over several features.",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "type": "module",
   "main": "index.ts",
   "types": "./dist/env.d.ts",
