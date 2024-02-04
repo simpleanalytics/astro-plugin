@@ -110,4 +110,4 @@ See [CHANGELOG.md](CHANGELOG.md) for a history of changes to this integration.
 
 ---
 
-This package has initially been used for building [Resurse.dev](https://resurse.dev/) - an online resource repository for people starting out in digital careers from Development to Design, from Marketing to Security, created for free by [Viorel](https://viorelmocanu.ro/) and his [YouTube](https://www.youtube.com/@ViorelMocanu) community. It was made by [Viorel Mocanu](https://github.com/ViorelMocanu) after [a challenge](https://github.com/simpleanalytics/roadmap/issues/708) from [Adriaan van Rossum](https://github.com/adriaanvanrossum).
+This package has initially been used for building [Resurse.dev](https://resurse.dev/) - an online resource repository for people starting out in digital careers from Development to Design, from Marketing to Security, created for free by [Viorel](https://viorelmocanu.ro/) and his [YouTube](https://www.youtube.com/@ViorelMocanu) community. It was made by [Viorel Mocanu](https://github.com/ViorelMocanu) after [a challenge](https://github.com/simpleanalytics/roadmap/issues/708) from [Adriaan](https://github.com/adriaandotcom).
