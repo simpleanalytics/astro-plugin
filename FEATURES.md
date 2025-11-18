@@ -14,6 +14,7 @@
   - [✅ Option: Strict UTMs 🔒](https://github.com/ViorelMocanu/astro-simpleanalytics-plugin/blob/main/FEATURES.md#user-content--option-strict-utms-)
   - [✅ Option: Allow URL parameters 🔓](https://github.com/ViorelMocanu/astro-simpleanalytics-plugin/blob/main/FEATURES.md#user-content--option-allow-url-parameters-)
   - [✅ Option: Ignore metrics 🚫](https://github.com/ViorelMocanu/astro-simpleanalytics-plugin/blob/main/FEATURES.md#user-content--option-ignore-metrics-)
+  - [✅ Option: Custom alt text for tracking pixel 🏷️](https://github.com/ViorelMocanu/astro-simpleanalytics-plugin/blob/main/FEATURES.md#user-content--option-custom-alt-text-for-tracking-pixel-️)
   - [💡 Feature: Embed chart on your site 📈](https://github.com/ViorelMocanu/astro-simpleanalytics-plugin/blob/main/FEATURES.md#user-content--feature-embed-chart-on-your-site-)
 
 Once you [install it](README.md#🚀-installation), the Astro Simple Analytics Plugin should be ready to go with zero config.
@@ -40,6 +41,7 @@ These are all the available parameter options for this plugin where you choose t
   ignorePages={undefined}        {/* (undefined | string) */}
   nonUniqueHostnames={undefined} {/* (undefined | string) */}
   ignoreMetrics={undefined}      {/* (undefined | string) */}
+  altText={undefined}            {/* (undefined | string) */}
 />
 ```
 
@@ -249,6 +251,18 @@ So if, for example, you'd like to ignore `timeonpage` and `scrolled`, you should
 ```
 
 You can add any number of metrics to this list if you want to ignore them.
+
+## ✅ Option: Custom alt text for tracking pixel 🏷️
+
+By default, the tracking pixel in the noscript fallback has an empty alt attribute (`alt=""`), which is appropriate for decorative images. However, you may want to provide custom alternative text for accessibility or other reasons.
+
+You can customize the alt text by passing the `altText` parameter:
+
+```Astro
+<SimpleAnalytics altText="Simple Analytics tracking pixel" />
+```
+
+If you don't provide the `altText` parameter, it will default to an empty string, keeping the original behavior.
 
 ## 💡 Feature: Embed chart on your site 📈
 
