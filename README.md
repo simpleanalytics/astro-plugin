@@ -75,6 +75,7 @@ These are all the available parameter options for this plugin where you choose t
   ignorePages={undefined}        {/* (undefined | string) */}
   nonUniqueHostnames={undefined} {/* (undefined | string) */}
   ignoreMetrics={undefined}      {/* (undefined | string) */}
+  altText={undefined}            {/* (undefined | string) */}
 />
 ```
 

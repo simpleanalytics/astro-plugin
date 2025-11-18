@@ -4,6 +4,7 @@ import {
   sanitizeCSV,
   sanitizeHostname,
   sanitizeHostnameList,
+  sanitizeString,
 } from "./utilities";
 
 export interface Props {
@@ -19,6 +20,7 @@ export interface Props {
   strictUTMs?: boolean;
   allowParams?: string | undefined;
   ignoreMetrics?: string | undefined;
+  altText?: string | undefined;
 }
 
 const {
@@ -34,6 +36,7 @@ const {
   strictUTMs = false,
   allowParams = undefined,
   ignoreMetrics = undefined,
+  altText = undefined,
 } = Astro.props;
 
 // prop sanitization
@@ -49,6 +52,7 @@ const sanitizedDebug = sanitizeBoolean(debug);
 const sanitizedStrictUTMs = sanitizeBoolean(strictUTMs);
 const sanitizedAllowParams = sanitizeCSV(allowParams);
 const sanitizedIgnoreMetrics = sanitizeCSV(ignoreMetrics);
+const sanitizedAltText = sanitizeString(altText);
 
 // attribute generation
 const realURL = new URL(Astro.url.origin);
@@ -159,7 +163,7 @@ if (sanitizedDebug) {
       <noscript>
         <img
           src={imageSrc}
-          alt="Simple Analytics tracking pixel"
+          alt={sanitizedAltText || ""}
           referrerpolicy="no-referrer-when-downgrade"
         />
       </noscript>
